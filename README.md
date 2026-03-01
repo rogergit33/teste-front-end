@@ -14,7 +14,7 @@ Instalação com npm
 
 ```bash
   git clone "https://github.com/rogergit33/teste-front-end"
-  cd test
+  cd teste-front-end
   npm install
 ```
 
