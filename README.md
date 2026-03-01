@@ -1,4 +1,4 @@
-## Teste Front-end da <img src="./.github/.png" alt="imagem do projeto">
+## Teste Front-end da <img src="./.github/logo-econverse.png" alt="imagem do projeto">
 
 ## 💻 Deploy
 
