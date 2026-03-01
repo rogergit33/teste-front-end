@@ -1,4 +1,4 @@
- <img src="./.github/logo-econverse.png" alt="imagem do projeto">
+## Teste técnico da econverse 
 
 ## 💻 Deploy
 
