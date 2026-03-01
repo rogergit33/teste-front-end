@@ -1,0 +1,52 @@
+.tabs {
+  .tabs-container {
+    display: flex;
+    padding-top: 17px;
+
+    button {
+      width: 214px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #3B3B3B;
+      cursor: pointer;
+      border: 1px solid #BDBDBD;
+      opacity: 1;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #3442B5;
+        font-weight: 700;
+      }
+
+      &:first-child {
+        color: #3442B5;
+        font-weight: 700;
+      }
+    }
+
+    @media (max-width: 1338px) {
+      overflow-x: auto;
+      scrollbar-width: none; 
+      -webkit-overflow-scrolling: touch; 
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #bdbdbd;
+        border-radius: 10px;
+      }
+
+      button {
+        flex-shrink: 0;
+      }
+    }
+  }
+}

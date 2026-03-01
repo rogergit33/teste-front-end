@@ -1,0 +1,59 @@
+.hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%),
+    url("../../assets/black-friday.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-top: 78px;
+  padding-bottom: 55px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      max-width: 822px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 50px;
+      color: #ffffff;
+    }
+
+    span {
+      color: #f7ca11;
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      margin-top: 38px;
+    }
+
+    button {
+      width: 206px;
+      height: 50px;
+      background-color: #f7ca11;
+      color: #271c47;
+      gap: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      border: none;
+      margin-top: 41px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #fbdf49;
+      }
+    }
+  }
+}

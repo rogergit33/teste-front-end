@@ -1,0 +1,48 @@
+.related-product-header {
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    gap: 34px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+    max-width: 360px;
+    height: 1px;
+    opacity: 1;
+    background-color: #dedede;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    width: fit-content;
+    letter-spacing: 0%;
+    color: #3442b5;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #3f3f40;
+    text-decoration: none;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+  }
+}

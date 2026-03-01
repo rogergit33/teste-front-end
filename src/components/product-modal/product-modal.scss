@@ -1,0 +1,159 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  .modal {
+    background: #fff;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 769px;
+    position: relative;
+    animation: fadeIn 0.2s ease-in-out;
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      border: none;
+      background: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 87px;
+      padding-top: 33px;
+
+      img {
+        width: 100%;
+        max-width: 246px;
+        height: 192px;
+        opacity: 1;
+      }
+
+      .info {
+        h3 {
+          color: #3f3f40;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 5%;
+          text-transform: uppercase;
+        }
+
+        .price {
+          color: #3f3f40;
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 5%;
+          padding-top: 18px;
+        }
+
+        .desc {
+          width: 289px;
+          color: #9f9f9f;
+          font-family: "Work Sans";
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 150%;
+          letter-spacing: 5%;
+          padding-top: 32px;
+        }
+
+        .details {
+          color: #3442b5;
+          text-decoration: none;
+          font-family: "Work Sans";
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 11px;
+          line-height: 100%;
+          letter-spacing: 5%;
+        }
+
+        .actions {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-top: 16px;
+
+          .quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            width: 110px;
+            height: 36px;
+            border-radius: 4px;
+            border: 1px solid #d9d9d9;
+
+            button {
+              border: none;
+              background: none;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          .buy {
+            background: #ffce00;
+            color: #271c47;
+            width: 188px;
+            height: 36px;
+            opacity: 1;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #fbdf49;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .modal {
+      .modal-content {
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  }
+}
